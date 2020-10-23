@@ -1,0 +1,14 @@
+{
+  "name": "front-end-styling-test",
+  "version": "1.0.0",
+  "description": "Front end styling test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Penny Lyle (pennyk)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
