@@ -9,6 +9,11 @@
   "author": "Penny Lyle (pennyk)",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
   }
 }

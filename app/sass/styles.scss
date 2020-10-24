@@ -1,0 +1,8 @@
+/* Styles */
+@import '00_base/base';
+
+/* BEM Naming format: .block__element--variant {} */
+
+body {
+    border: solid 10px blue;
+}
