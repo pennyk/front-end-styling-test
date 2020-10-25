@@ -1,16 +1,26 @@
 $(document).ready(function () {
-    $('.review-carousel').slick({
+    $('.review-section__carousel').slick({
+        appendArrows: $('.carousel__controls'),
+        centerMode: true,
+        focusOnChange: true,
+        focusOnSelect: true,
         infinite: false,
+        initialSlide: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         responsive: [{
             breakpoint: 1024,
             settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                infinite: true
+                dots: true,
+                focusOnSelect: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
             }
         }, {
             breakpoint: 600,
             settings: {
+                focusOnSelect: true,
                 slidesToShow: 2,
                 dots: true
             }

@@ -1,9 +1,30 @@
 /* Base */
 
+/* TODO: replace section with @import 'colours' */
 /* Colours */
+$gray33: #333333;
+$grayE5: #E5E5E5;
+$highlight: #F57F31;
+$highlight-lighter: #F5B431;
+$white: #FFFFFF;
+$slick-arrow-color: $gray33;
 
-
+/* TODO: replace section with @import 'fonts' */
 /* Fonts */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
 
+h1, h2, h3, h4, p, div {
+    font-family: 'Roboto', 'Open Sans';
+    color: $gray33;
+}
 
+h3 {
+    color: $highlight;
+}
+
+/* TODO: replace section with @import 'variables' */
 /* Variables */

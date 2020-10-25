@@ -1,0 +1,84 @@
+
+.review-card__avatar {
+    background-color: $white;
+    border: solid $white 4px;
+    border-radius: 36px;
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -16px;
+}
+
+.review-card--state-focused .review-card__avatar {
+    /* Ellipse 104 */
+
+    // position: absolute;
+    // width: 80px;
+    // height: 80px;
+    // left: 432px;
+    // top: 312px;
+
+    background: $highlight-lighter; // #F5B331;
+}
+
+.review-card__name {
+    /* Navn navnsen */
+
+    // position: absolute;
+    // left: 30%;
+    // right: 56.67%;
+    // top: 45.33%;
+    // bottom: 52%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: $highlight; // #F57F31;
+}
+
+.review-card__role {
+    // position: absolute;
+    // left: 30%;
+    // right: 56.67%;
+    // top: 48%;
+    // bottom: 49.33%;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.review-card__rating {
+
+}
+
+.review-card__comment {
+    /* Det nye website blev lanceret i februar 2018 og allerede inden for de første 6 måneder var konverteringerne steget mere end 150%. */
+
+    // position: absolute;
+    // left: 30%;
+    // right: 46.67%;
+    // top: 51.56%;
+    // bottom: 35.11%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+
+    /* or 156% */
+    display: flex;
+    align-items: center;
+
+    /* Gray 1 */
+    color: #333333;
+}
