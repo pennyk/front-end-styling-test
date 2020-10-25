@@ -1,8 +1,10 @@
 /* Styles */
 @import './00_base/base';
-@import './01_atom/a-card';
+@import './01_atom/a-buttons';
+@import './01_atom/a-card-elements';
 @import './01_atom/a-headings';
 @import './02_molecule/m-card';
+@import './02_molecule/m-controls';
 @import './03_organism/o-carousel';
 @import './04_template/t-review-section';
 //@import './05_page/p-page'

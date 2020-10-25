@@ -1,0 +1,25 @@
+/* Buttons */
+.carousel__controls .slick-prev {
+    left: 35.75%;
+    &::before {
+        content: url(../../assets/images/arrow-prev.png);
+    }
+}
+.carousel__controls .slick-next {
+    float: right;
+    right: 35.75%;
+    top: 0px;
+    &::before {
+        content: url(../../assets/images/arrow-next.png);
+    }
+}
+.carousel__controls .slick-prev,
+.carousel__controls .slick-next {
+    position: relative;
+}
+.review-section__carousel .slick-prev::before,
+.review-section__carousel .slick-next::before,
+.carousel__controls .slick-prev::before,
+.carousel__controls .slick-next::before {
+    color: $gray33;
+}

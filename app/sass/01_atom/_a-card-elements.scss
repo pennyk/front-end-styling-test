@@ -1,0 +1,94 @@
+/* Card Elements */
+
+.review-card__avatar {
+    background-color: $white;
+    border: solid $white 4px;
+    position: relative;
+    top: -24px; //-16px;
+    border-radius: 40px; //36px;
+    width: 72px;
+    height: 72px;
+    margin-bottom: -8px;
+    img {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+.review-card.slick-current .review-card__avatar,
+.review-card--state-focused .review-card__avatar {
+    /* Ellipse 104 */
+    border: solid transparent 4px;
+    border-top-color: $highlight-lighter;
+    border-radius: 40px;
+    &:before {
+        height: 4px;
+        width: 79px;
+        border-radius: 0px;
+        background-color: $highlight-lighter;
+        position: relative;
+        content: ' ';
+        top: 16px; //8px;
+        display: block;
+        z-index: 0;
+    }
+    img {
+        position: relative;
+        top: -4px;
+    }
+}
+
+.review-card__name {
+    /* Navn navnsen */
+    font-size: 18px;
+    line-height: 21px;
+    color: $highlight; // #F57F31;
+    padding-bottom: 3px; // 24px - line-height
+}
+
+.review-card__role {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px 0; // 24px - line-height
+}
+
+.review-card__name,
+.review-card__role {
+    font-weight: bold;
+}
+
+.review-card__comment,
+.review-card__name,
+.review-card__role {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+}
+
+.review-card__rating {
+    height: 24px;
+    width: 128px;
+    line-height: 21px;
+    //background-color: #dddddd;
+    float: right;
+    //position: relative;
+    //right: -28px;
+    //top: -12px;
+    display: flex;
+    align-items: center;
+    img {
+        height: 16px; //24px;
+        width: 16px; //24px;
+        padding: 4px;
+    }
+}
+
+.review-card__comment {
+    /* Det nye website blev lanceret i februar 2018 og allerede inden for de første 6 måneder var konverteringerne steget mere end 150%. */
+
+    //font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+
+    padding-top: 12px;
+}

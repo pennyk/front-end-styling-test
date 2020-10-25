@@ -18,50 +18,105 @@ h3 {
 
 /* TODO: replace section with @import 'variables' */
 /* Variables */
+/* Buttons */
+.carousel__controls .slick-prev {
+  left: 35.75%; }
+  .carousel__controls .slick-prev::before {
+    content: url(../../assets/images/arrow-prev.png); }
+
+.carousel__controls .slick-next {
+  float: right;
+  right: 35.75%;
+  top: 0px; }
+  .carousel__controls .slick-next::before {
+    content: url(../../assets/images/arrow-next.png); }
+
+.carousel__controls .slick-prev,
+.carousel__controls .slick-next {
+  position: relative; }
+
+.review-section__carousel .slick-prev::before,
+.review-section__carousel .slick-next::before,
+.carousel__controls .slick-prev::before,
+.carousel__controls .slick-next::before {
+  color: #333333; }
+
+/* Card Elements */
 .review-card__avatar {
   background-color: #FFFFFF;
   border: solid #FFFFFF 4px;
-  border-radius: 36px;
-  width: 64px;
-  height: 64px;
   position: relative;
-  top: -16px; }
+  top: -24px;
+  border-radius: 40px;
+  width: 72px;
+  height: 72px;
+  margin-bottom: -8px; }
+  .review-card__avatar img {
+    width: 72px;
+    height: 72px; }
 
+.review-card.slick-current .review-card__avatar,
 .review-card--state-focused .review-card__avatar {
   /* Ellipse 104 */
-  background: #F5B431; }
+  border: solid transparent 4px;
+  border-top-color: #F5B431;
+  border-radius: 40px; }
+  .review-card.slick-current .review-card__avatar:before,
+  .review-card--state-focused .review-card__avatar:before {
+    height: 4px;
+    width: 79px;
+    border-radius: 0px;
+    background-color: #F5B431;
+    position: relative;
+    content: ' ';
+    top: 16px;
+    display: block;
+    z-index: 0; }
+  .review-card.slick-current .review-card__avatar img,
+  .review-card--state-focused .review-card__avatar img {
+    position: relative;
+    top: -4px; }
 
 .review-card__name {
   /* Navn navnsen */
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
-  color: #F57F31; }
+  color: #F57F31;
+  padding-bottom: 3px; }
 
 .review-card__role {
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  padding: 4px 0; }
+
+.review-card__name,
+.review-card__role {
+  font-weight: bold; }
+
+.review-card__comment,
+.review-card__name,
+.review-card__role {
+  font-style: normal;
   display: flex;
   align-items: center; }
 
+.review-card__rating {
+  height: 24px;
+  width: 128px;
+  line-height: 21px;
+  float: right;
+  display: flex;
+  align-items: center; }
+  .review-card__rating img {
+    height: 16px;
+    width: 16px;
+    padding: 4px; }
+
 .review-card__comment {
   /* Det nye website blev lanceret i februar 2018 og allerede inden for de første 6 måneder var konverteringerne steget mere end 150%. */
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
-  display: flex;
-  align-items: center;
-  /* Gray 1 */
-  color: #333333; }
+  padding-top: 12px; }
 
 /* Headings */
 h2 {
@@ -72,34 +127,28 @@ h2 {
   margin: 80px 0 42px 0;
   /* What 400+ reviews say about us */ }
 
-.review-card {
+/* Review Card */
+.review-card__content {
   /* Rectangle 126 */
-  width: 416px;
-  height: 264px;
   background: #FFFFFF;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
   border-radius: 24px;
-  margin: 16px;
-  padding: 0 48px 12px 36px; }
-  .review-card.slick-current {
-    /* Rectangle 126 */
-    width: 416px;
-    height: 264px;
-    background: #FFFFFF;
-    border: 4px solid #F5B431;
-    box-sizing: border-box;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
-    border-radius: 24px; }
-
-.review-card--state-focused {
-  /* Rectangle 126 */
-  width: 416px;
   height: 264px;
+  margin: 24px 16px 16px;
+  padding: 0 48px 12px 36px; }
+
+.review-card.slick-current .review-card__content {
+  /* Rectangle 126 */
   background: #FFFFFF;
   border: 4px solid #F5B431;
   box-sizing: border-box;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
   border-radius: 24px; }
+
+/* Carousel Controls */
+.carousel__controls {
+  width: 100%;
+  height: 40px; }
 
 .review-section__carousel {
   /* Rectangle 124 */
@@ -108,14 +157,16 @@ h2 {
   max-height: 308px;
   background: #F57F31;
   border-radius: 24px;
-  padding-top: 108px; }
+  padding-top: 96px; }
+  .review-section__carousel.slick-dotted.slick-slider {
+    margin-bottom: 108px; }
+  .review-section__carousel .slick-dots {
+    position: relative;
+    bottom: -16px; }
 
-.carousel__controls {
-  background-color: #000000; }
-
-.t-review-section {
+.review-section {
   margin: 64px 58px 0; }
-  .t-review-section h2 {
+  .review-section h2 {
     margin: 80px 0 52px 108px; }
 
 /* BEM Naming format: .block__element--variant {} */

@@ -1,7 +1,8 @@
-$(document).ready(function () {
+$(function () {
     $('.review-section__carousel').slick({
         appendArrows: $('.carousel__controls'),
-        centerMode: true,
+        //centerMode: true,
+        dots: true,
         focusOnChange: true,
         focusOnSelect: true,
         infinite: false,
