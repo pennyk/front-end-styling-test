@@ -12,7 +12,6 @@ $(function () {
         responsive: [{
             breakpoint: 1150,
             settings: {
-                //dots: true,
                 focusOnSelect: true,
                 infinite: true,
                 slidesToShow: 2,
@@ -23,7 +22,8 @@ $(function () {
             settings: {
                 focusOnSelect: true,
                 slidesToShow: 1,
-                //dots: true
+                slidesToScroll: 1,
+                dots: false
             }
         }, {
             breakpoint: 300,

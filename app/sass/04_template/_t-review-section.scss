@@ -1,6 +1,9 @@
 .review-section {
     margin: 64px 58px 0;
     h2 {
-        margin: 80px 0 52px 108px;
+        margin: 40px 0 32px 0;
+        @include media(">=tablet") {
+            margin: 80px 0 52px 108px;
+        }
     }
 }

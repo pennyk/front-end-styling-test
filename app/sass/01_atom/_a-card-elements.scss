@@ -70,7 +70,6 @@
     width: 128px;
     line-height: 21px;
     //background-color: #dddddd;
-    float: right;
     //position: relative;
     //right: -28px;
     //top: -12px;
@@ -80,6 +79,9 @@
         height: 16px; //24px;
         width: 16px; //24px;
         padding: 4px;
+    }
+    @include media(">=tablet") {
+        float: right;
     }
 }
 
