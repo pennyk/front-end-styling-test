@@ -10,20 +10,20 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         responsive: [{
-            breakpoint: 1024,
+            breakpoint: 1150,
             settings: {
-                dots: true,
+                //dots: true,
                 focusOnSelect: true,
                 infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToShow: 2,
+                slidesToScroll: 2
             }
         }, {
-            breakpoint: 600,
+            breakpoint: 800,
             settings: {
                 focusOnSelect: true,
-                slidesToShow: 2,
-                dots: true
+                slidesToShow: 1,
+                //dots: true
             }
         }, {
             breakpoint: 300,

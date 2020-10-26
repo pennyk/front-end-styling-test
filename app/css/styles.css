@@ -41,6 +41,9 @@ h3 {
 .carousel__controls .slick-next::before {
   color: #333333; }
 
+.review-section__carousel .slick-dots {
+  position: relative; }
+
 /* Card Elements */
 .review-card__avatar {
   background-color: #FFFFFF;
@@ -82,7 +85,7 @@ h3 {
   font-size: 18px;
   line-height: 21px;
   color: #F57F31;
-  padding-bottom: 3px; }
+  padding: 2px 0 1px 0; }
 
 .review-card__role {
   font-size: 14px;
@@ -132,9 +135,9 @@ h2 {
   /* Rectangle 126 */
   background: #FFFFFF;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+  border: 4px solid transparent;
   border-radius: 24px;
-  height: 264px;
-  margin: 24px 16px 16px;
+  margin: 120px 16px 16px;
   padding: 0 48px 12px 36px; }
 
 .review-card.slick-current .review-card__content {
@@ -148,21 +151,25 @@ h2 {
 /* Carousel Controls */
 .carousel__controls {
   width: 100%;
-  height: 40px; }
+  height: 40px;
+  position: relative;
+  bottom: 44px; }
 
 .review-section__carousel {
-  /* Rectangle 124 */
-  margin: 32px 0;
-  height: 308px;
-  max-height: 308px;
-  background: #F57F31;
-  border-radius: 24px;
-  padding-top: 96px; }
+  /* Rectangle 124 */ }
+  .review-section__carousel::before {
+    content: ' ';
+    display: block;
+    height: 212px;
+    max-height: 212px;
+    margin: 32px 0;
+    background: #F57F31;
+    border-radius: 24px;
+    padding-top: 96px;
+    margin-bottom: -308px; }
   .review-section__carousel.slick-dotted.slick-slider {
-    margin-bottom: 108px; }
-  .review-section__carousel .slick-dots {
-    position: relative;
-    bottom: -16px; }
+    margin-bottom: 30px;
+    padding-top: 0; }
 
 .review-section {
   margin: 64px 58px 0; }

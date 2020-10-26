@@ -43,7 +43,7 @@
     font-size: 18px;
     line-height: 21px;
     color: $highlight; // #F57F31;
-    padding-bottom: 3px; // 24px - line-height
+    padding: 2px 0 1px 0; // Vertical: 24px - line-height
 }
 
 .review-card__role {
